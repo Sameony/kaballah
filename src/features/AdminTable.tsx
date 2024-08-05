@@ -139,9 +139,8 @@ const UserDataTable: React.FC = () => {
       });
   }, [initialUserData, searchEmail, sortOrder]);
 
-  const openPDF = (email: string) => {
-    // Placeholder logic to open a PDF for a specific user
-    window.open(`/pdf/${email}.pdf`, '_blank');
+  const openPDF = () => {
+    window.open('/thepd.pdf', '_blank');
   };
 
   return (
@@ -194,7 +193,7 @@ const UserDataTable: React.FC = () => {
                 <Table.Cell className='py-3'>{user.timeOfBirth}</Table.Cell>
                 <Table.Cell className='py-3'>
                   <Button
-                    onClick={() => openPDF(user.email)}
+                    onClick={() => openPDF()}
                     className="py-1 px-2 bg-[#D2B48C] hover:bg-[#C19A6B] text-white"
                   >
                     View Chart PDF
