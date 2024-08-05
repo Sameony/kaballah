@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'adobe-garamond';
+  src: url('/fonts/adobe-garamond-pro-2/AGaramondPro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'adobe-garamond-bold';
+  src: url('/fonts/adobe-garamond-pro-2/AGaramondPro-Regular.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
