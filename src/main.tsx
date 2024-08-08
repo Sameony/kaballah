@@ -7,6 +7,7 @@ import ChartForm from './features/ChartForm';
 import NotFound from './features/NotFound';
 import Home from './features/AdminHome';
 import AllocateDomains from './features/AllocateDomain';
+import App from './features/RenderTOL';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path='/' element={<ChartForm />} />
         <Route path="/admin" element={<Home />}></Route>
+        <Route path="/tree" element={<App />}></Route>
         <Route path="/admin/domains" element={<AllocateDomains />} />
         <Route path="/admin/users" element={<UserDataTable />} />
         <Route path="*" element={<NotFound />} />

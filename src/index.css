@@ -8,9 +8,15 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'adobe-garamond-bold';
   src: url('/fonts/adobe-garamond-pro-2/AGaramondPro-Regular.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
+}
+
+.custom-dashed-border {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23FFBF00FF' stroke-width='5' stroke-dasharray='9' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e");
+  border-radius: 100px;
 }
